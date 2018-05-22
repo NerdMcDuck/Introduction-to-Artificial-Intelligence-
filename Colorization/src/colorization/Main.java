@@ -59,14 +59,14 @@ public class Main {
 		predict(data, "Data_Result");
 	
 		//Color the duck
-		ArrayList<double[]> img = scaleArray(gimage("C:\\Users\\Ramon\\workspace\\Colorization\\duck with glasses.png", "C:\\Users\\Ramon\\workspace\\Colorization\\GrayDuck.png"));
+		ArrayList<double[]> img = scaleArray(gimage("Colorization\\duck with glasses.png", "Colorization\\GrayDuck.png"));
 		predict(img, "img_values");
-		Colorimage("C:\\Users\\Ramon\\workspace\\Colorization\\GrayDuck.png", loadData("img_values.csv"),"C:\\Users\\Ramon\\workspace\\Colorization\\ColoredDuck.png");
+		Colorimage("Colorization\\GrayDuck.png", loadData("img_values.csv"),"Colorization\\ColoredDuck.png");
 		
 		//Color the tiger
-		ArrayList<double[]> img2 = scaleArray(gimage("C:\\Users\\Ramon\\workspace\\Colorization\\tiger.png", "C:\\Users\\Ramon\\workspace\\Colorization\\GrayTiger.png"));
+		ArrayList<double[]> img2 = scaleArray(gimage("Colorization\\tiger.png", "Colorization\\GrayTiger.png"));
 		predict(img2, "img_values2");
-		Colorimage("C:\\Users\\Ramon\\workspace\\Colorization\\GrayTiger.png", loadData("img_values2.csv"),"C:\\Users\\Ramon\\workspace\\Colorization\\ColoredTiger.png");
+		Colorimage("Colorization\\GrayTiger.png", loadData("img_values2.csv"),"Colorization\\ColoredTiger.png");
 		
 		System.out.println("Done!");
 	}
